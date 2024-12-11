@@ -40,6 +40,21 @@
       background-color: #28a745;
       color: white;
     }
+    /* Additional styles for navigation */
+    .nav-section {
+      background-color: #f8f9fa; /* Light gray */
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .nav-section .list-group-item {
+      border: none; /* Remove borders */
+    }
+    .nav-section .list-group-item:hover {
+      background-color: #e9ecef; /* Light hover effect */
+    }
+    .content-section {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -50,7 +65,7 @@
         <div class="col-md-8 offset-md-2">
           <form>
             <div class="input-group">
-              <input type="text" class="form-control" name="ch">
+              <input type="text" class="form-control" name="ch" placeholder="Search...">
               <button class="btn ms-3 col-md-2">
                 <i class="fa-solid fa-magnifying-glass"></i> Search
               </button>
@@ -59,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid mt-1">
+    <div class="container-fluid mt-1 nav-section">
       <div class="row">
         <div class="col-md-2">
           <div class="list-group">
@@ -74,7 +89,7 @@
             <a href="/profile" class="list-group-item list-group-item-action">About the Founders</a>
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 content-section">
           <div class="card">
             <div class="card-body">
               <p class="fs-3 text-center">Let's Build Your Knowledge!!</p>
@@ -125,6 +140,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Additional cards can be added here -->
               </div>
             </div>
           </div>
